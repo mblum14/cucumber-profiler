@@ -113,7 +113,7 @@ module Cucumber
         @io.puts
         print_steps(:pending)
         print_steps(:failed)
-        print_status(features, @options)
+        print_stats(features, @options)
       end
 
       def print_report(feature_elements, feature_name)
