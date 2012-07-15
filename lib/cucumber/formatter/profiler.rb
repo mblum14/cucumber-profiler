@@ -129,7 +129,7 @@ module Cucumber
         feature_elements.reject! { |e| (e.run_time < (mean + k * stddev)) || (stddev == 0) }
 
         @io.puts "\n\nFeature: #{bold magenta(feature_name)}"
-        @io.puts "#{bold red(times.size)} of #{bold green(times.size)} scenarios(s) were 2 or greater standard deviations above the mean"
+        @io.puts "#{bold red(feature_elements.size)} of #{bold green(times.size)} scenarios(s) were 2 or greater standard deviations above the mean"
         @io.puts cyan "#{"Mean execution time:"} #{format_time(mean)}"
         @io.puts cyan "#{"Standard Deviation:"} #{"%.5f" % stddev}"
         @io.puts red "WARNING: Slow mean execution time!" if mean > 3
