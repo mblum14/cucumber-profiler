@@ -43,6 +43,7 @@ module Cucumber
 
 
       def before_feature_element(feature_element)
+        feature_elmeent.extend Cucumber::Ast::Benchmark
         feature_element.started_at = Time.now
         @exception_raised = false
       end
