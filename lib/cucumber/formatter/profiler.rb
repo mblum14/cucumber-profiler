@@ -101,7 +101,7 @@ module Cucumber
 
       private
 
-      SUB_SECOND_PREVISION = 5
+      SUB_SECOND_PRECISION = 5
       DEFAULT_PRECISION = 2
 
       def print_summary(features)
