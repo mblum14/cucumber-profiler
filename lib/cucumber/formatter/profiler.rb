@@ -1,5 +1,6 @@
 require 'cucumber/formatter/io'
 require 'cucumber/formatter/console'
+require 'cucumber/formatter/base'
 
 module Math::Array
   def sum
