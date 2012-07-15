@@ -1,6 +1,6 @@
 require 'cucumber/formatter/io'
 require 'cucumber/formatter/console'
-require 'cucumber/formatter/base'
+require 'base'
 
 module Math::Array
   def sum
@@ -148,6 +148,7 @@ module Cucumber
       def table_header_cell?(status)
         status == :skipped_param
       end
+
     end
   end
 end
