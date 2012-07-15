@@ -22,7 +22,7 @@ module Math::Array
 end
 
 module Cucumber
-  module Formater
+  module Formatter
     class Profiler < Base
       include Console
       include Io
