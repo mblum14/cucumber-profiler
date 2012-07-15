@@ -23,7 +23,7 @@ end
 
 module Cucumber
   module Formatter
-    class Profiler < Base
+    class Profiler < Cucumber::Formatter::Base
       include Console
       include Io
 
