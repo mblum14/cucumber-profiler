@@ -36,7 +36,7 @@ module Cucumber
 
       def initialize(step_mother, path_or_io, options)
         @step_mother, @io, @options, @durations = step_mother, ensure_io(path_or_io, "fuubar"), options, []
-        @timed_feature = {}
+        @timed_features = {}
       end
       
 
