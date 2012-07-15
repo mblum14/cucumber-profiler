@@ -26,18 +26,21 @@ module Cucumber
     class Profiler < Base
       include Console
       include Io
+
       attr_reader :step_mother
 
       def initialize(step_mother, path_or_io, options)
-        @step_mother, @io, @options, @durations = step_mother, ensure_io(path_or_io, "progress"), options, []
+        @step_mother, @io, @options, @durations = step_mother, ensure_io(path_or_io, "fuubar"), options, []
         @timed_feature = {}
       end
+      
 
       def after_features(features)
         @io.puts
         @io.puts
         print_summary(features)
       end
+
 
       def before_feature_element(feature_element)
         feature_element.started_at = Time.now
