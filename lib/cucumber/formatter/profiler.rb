@@ -178,7 +178,7 @@ module Cucumber
       end
 
       def color(text, color_code)
-        "#{color_code}#{text}\e[0m" : text
+        "#{color_code}#{text}\e[0m"
       end
   
       def bold(text)

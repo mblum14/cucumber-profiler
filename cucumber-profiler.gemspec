@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "cucumber-profiler"
-  s.version     = "0.0.12"
+  s.version     = "0.0.13"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Michael Blumberg"]
   s.email       = ["mblum14@gmail.com"]
