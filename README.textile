@@ -1,0 +1,29 @@
+h1. cucumber-profiler
+
+_Currently_ _tested_ _against_ _cucumber-1.2.1_. _Is_ _known_ _not_ _to_ _be_ _compatible_ _with_ _some_ _older_ _versions_.
+
+A way to profile the performance of your cucumber features.
+
+The profiler groups your cucumber tests by feature. Within a feature, the profiler times each scenario and calculates the mean and standard deviation. Each scenario that is two or more standard deviations above the mean is listed.
+
+h2. Installation
+
+1. Put the profiler in your @Gemfile@
+
+bc. gem cucumber-profiler
+
+2. Use the @format@ flag to use the formatter
+
+bc. cucumber --format Cucumber::Formatter::Profiler features
+
+Alternatively, you can make the profiler your default format by putting the following your @cucumber.yml@ file:
+
+bc. --format Cucumber::Formatter::Profiler
+
+_If you use Timecop_: If you use the timecop gem to freeze or change time be sure to also return the
+time after each of your tests. Not doing so will make it appear as if your tests are taking either
+far too long or have taken negative time to complete. 
+
+h2. Copyright
+
+Copyright (c) 2012 Michael Blumberg.
